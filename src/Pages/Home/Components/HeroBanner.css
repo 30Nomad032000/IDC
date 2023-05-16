@@ -1,0 +1,7 @@
+.heroBanner {
+  background-image: url("/src/assets/Images/Banner.svg");
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 903.28px;
+  max-width: 100%;
+}
