@@ -11,7 +11,7 @@ function App() {
     <>
       <ThemeProvider theme={theme}>
         <Header />
-        <Suspense fallback={<></>}>
+        <Suspense fallback={<>Loading...</>}>
           <Routes />
         </Suspense>
         <Footer />

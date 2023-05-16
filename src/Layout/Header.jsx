@@ -1,5 +1,5 @@
 import { AppBar, Box, Typography, Toolbar } from "@mui/material";
-import React from "react";
+import "../Css/main.css";
 import Logo from "../assets/Images/Logo.svg";
 import IDC from "../assets/Images/IDC-logo.svg";
 
@@ -15,12 +15,16 @@ function Header() {
         <Box
           component={"img"}
           src={Logo}
+          alt={"alteryx-logo"}
+          loading="lazy"
           className="Logo"
           sx={{ width: { sm: "196px", xs: "136px" } }}
         />
         <Box
           component={"img"}
           src={IDC}
+          alt={"IDC-logo"}
+          loading="lazy"
           className="Logo"
           sx={{ width: { sm: "210px", xs: "150px" } }}
         />

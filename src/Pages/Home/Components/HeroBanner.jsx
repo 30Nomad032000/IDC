@@ -1,6 +1,5 @@
 import React from "react";
 import { Box, Button, Grid, Typography } from "@mui/material";
-import "../Components/HeroBanner.css";
 
 function HeroBanner() {
   return (
@@ -53,20 +52,16 @@ function HeroBanner() {
               }}
             >
               <Button
-                variant="standard"
                 sx={{
-                  "&:hover": {
-                    background: "#0073D0",
-                  },
+                  background: "#0093D0",
                   padding: "20px",
                   width: "270px",
                   height: "64px",
                   borderRadius: "8px",
-                  background: "#0093D0",
                   fontSize: "18px",
                   fontWeight: "500",
-                  color: "#FFFFFF",
-                  fontFamily: "Montserrat",
+                  color: "#ffffff",
+                  fontFamily: "Monsterrat",
                 }}
               >
                 Take the Assesment

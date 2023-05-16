@@ -4,7 +4,13 @@ import HeroBannerBottom from "./Components/HeroBannerBottom.jsx";
 import HomeDetails from "./Components/HomeDetails.jsx";
 
 function Home() {
-  return <>nothing</>;
+  return (
+    <>
+      <HeroBanner />
+      <HeroBannerBottom />
+      <HomeDetails />
+    </>
+  );
 }
 
 export default Home;
