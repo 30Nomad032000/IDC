@@ -1,7 +1,9 @@
 import React from "react";
 import { Box, Button, Grid, Typography } from "@mui/material";
+import { useNavigate } from "react-router-dom";
 
 function HeroBanner() {
+  const navigate = useNavigate();
   return (
     <>
       <Box className="heroBanner">
@@ -58,6 +60,7 @@ function HeroBanner() {
                   padding: "20px",
                   borderRadius: "8px",
                 }}
+                onClick={()=>{navigate("/result");}}
               >
                 <Typography variant="subtitle2"> Take the Assesment</Typography>
               </Button>
