@@ -52,19 +52,14 @@ function HeroBanner() {
               }}
             >
               <Button
+                variant="contained"
+                className="banner-button"
                 sx={{
-                  background: "#0093D0",
                   padding: "20px",
-                  width: "270px",
-                  height: "64px",
                   borderRadius: "8px",
-                  fontSize: "18px",
-                  fontWeight: "500",
-                  color: "#ffffff",
-                  fontFamily: "Monsterrat",
                 }}
               >
-                Take the Assesment
+                <Typography variant="subtitle2"> Take the Assesment</Typography>
               </Button>
             </Box>
           </Grid>

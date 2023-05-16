@@ -32,3 +32,9 @@
   height: 903.28px;
   max-width: 100%;
 }
+
+.banner-button {
+  background: #0093d0;
+  width: 270px;
+  height: 64px;
+}
