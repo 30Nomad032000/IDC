@@ -11,7 +11,13 @@ function App() {
   return (
     <>
       <ThemeProvider theme={theme}>
-        <Suspense fallback={<PageLoader />}>
+        <Suspense
+          fallback={
+            <div style={{ height: "100vh" }}>
+              <PageLoader />
+            </div>
+          }
+        >
           <Routes />
         </Suspense>
       </ThemeProvider>
