@@ -111,6 +111,7 @@ function HomeDetails() {
                   <Box
                     component={"img"}
                     src={Review}
+                    alt={'Review-icon'}
                     sx={{
                       height: "84px",
                       width: "84px",

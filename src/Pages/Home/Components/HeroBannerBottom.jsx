@@ -10,13 +10,10 @@ function HeroBannerBottom() {
       <Grid
         container
         columnSpacing={3}
+        className="banner-bottom-wrapper"
         sx={{
-          padding: "10px",
           marginTop: { md: "-207px", sm: "-350px", xs: "-350px" },
-          background: "black",
-          opacity: "82%",
           height: { md: "161px", sm: "301px", xs: "300px" },
-          display: "flex",
         }}
       >
         {banner.map((item) => (
@@ -26,8 +23,8 @@ function HeroBannerBottom() {
             xs={12}
             md={4}
             sm={12}
+            className="banner-bottom"
             sx={{
-              display: "flex",
               justifyContent: {
                 xs: "center",
                 sm: "center",
@@ -36,7 +33,6 @@ function HeroBannerBottom() {
                 }`,
               },
               paddingTop: { xs: "10px", sm: "10px", md: "0px" },
-              alignItems: "center",
               gap: { xs: "15px", sm: "25px" },
             }}
           >
@@ -49,6 +45,7 @@ function HeroBannerBottom() {
             </Typography>
             <Divider
               variant="vertical"
+              className="banner-bottom-divider"
               sx={{
                 border: "1px solid #0093D0",
                 height: "71px",

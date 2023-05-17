@@ -8,18 +8,7 @@ function Result() {
   return (
     <>
       <Grid container height={"900px"}>
-        <Grid
-          item
-          xs={12}
-          sm={12}
-          md={6}
-          lg={6}
-          sx={{
-            display: "flex",
-            justifyContent: "flex-end",
-            alignItems: "center",
-          }}
-        >
+        <Grid item xs={12} sm={12} md={6} lg={6} className="result-wrapper">
           <Box
             component={"img"}
             src={result}
@@ -30,20 +19,8 @@ function Result() {
             }}
           />
         </Grid>
-        <Grid
-          item
-          xs={12}
-          sm={12}
-          md={6}
-          lg={6}
-          sx={{
-            display: "flex",
-            justifyContent: "flex-start",
-            alignItems: "center",
-          }}
-        >
+        <Grid item xs={12} sm={12} md={6} lg={6} className="result-content">
           <ThanksCard />
-          
         </Grid>
       </Grid>
     </>

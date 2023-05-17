@@ -38,3 +38,27 @@
   width: 270px;
   height: 64px;
 }
+
+.banner-bottom-wrapper {
+  padding: 10px;
+  background: black;
+  opacity: 82%;
+  display: flex;
+}
+
+.banner-bottom {
+  display: flex;
+  align-items: center;
+}
+
+.result-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.result-content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
