@@ -3,7 +3,7 @@ import { Box, Typography } from "@mui/material";
 function ThanksCard() {
   return (
     <>
-      <Box >
+      <Box display={"flex"} flexDirection={"column"}>
         <Typography variant="title2" padding={"0px 50px"}>
           Thanks for your
         </Typography>
@@ -24,7 +24,6 @@ function ThanksCard() {
           variant="subtitle3"
           textAlign={{ xs: "center", sm: "left" }}
           paddingTop={"10px"}
-          display={"block"}
         >
           Contrary to popular belief, Lorem Ipsum is not simply random text. It
           has roots in a piece of classical Latin literature

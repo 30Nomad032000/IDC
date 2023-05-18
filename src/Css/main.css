@@ -108,3 +108,28 @@
   color: rgba(0, 0, 0, 0.65);
   transform: translateY(0);
 }
+
+.register-wrapper {
+  background: #ffffff;
+  box-shadow: 0px 4px 23px -4px rgba(0, 0, 0, 0.07);
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.register-button-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: right;
+  margin-top: 25px;
+  padding-bottom: 25px;
+}
+
+.register-submit-button {
+  background: #0093d0;
+  height: 61px;
+  width: 207px;
+  padding: 18.5px 60px;
+}

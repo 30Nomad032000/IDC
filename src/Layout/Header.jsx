@@ -1,15 +1,20 @@
 import { AppBar, Box, Typography, Toolbar } from "@mui/material";
 import "../Css/main.css";
 import Logo from "../assets/Images/Logo.svg";
+import { useNavigate } from "react-router-dom";
 import IDC from "../assets/Images/IDC-logo.svg";
 
 function Header() {
+  const navigate = useNavigate();
   return (
-    <AppBar position="fixed" className="Nav">
+    <AppBar position="sticky" className="Nav">
       <Toolbar
         className="Toolbar"
         sx={{
           padding: { sm: "28px 51px", xs: "8px 25px" },
+        }}
+        onClick={() => {
+          navigate("/");
         }}
       >
         <Box

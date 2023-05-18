@@ -1,9 +1,11 @@
 import React from "react";
 import { Grid, Box, Typography, Button } from "@mui/material";
 import { Card } from "../../../Common/Card.jsx";
+import { useNavigate } from "react-router-dom";
 import Review from "../../../assets/Images/Reviews.svg";
 
 function HomeDetails() {
+  const navigate = useNavigate();
   return (
     <>
       <Grid container>
@@ -173,6 +175,9 @@ function HomeDetails() {
                       fontWeight: "600",
                       backgroundColor: "#FFFFFF",
                       borderRadius: " 8px",
+                    }}
+                    onClick={() => {
+                      navigate("/register");
                     }}
                   >
                     Take the Assesment
