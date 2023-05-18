@@ -5,16 +5,17 @@ import FormCard from "./Components/formCard.jsx";
 function Registeration() {
   return (
     <Box
-      height={"100vh"}
+      height={{ xs: "fit-content", sm: "80vh" }}
       display="flex"
       justifyContent={"center"}
       alignItems={"center"}
-      marginTop={{ xs: "75px", sm: "50px" }}
+      padding={"20px"}
     >
       <Box
         className="register-wrapper"
         width={{ xs: "350px", sm: "600px", md: "720px" }}
-        height={{ xs: "fit-content", sm: "720px" }}
+        height={"fit-content"}
+        padding={"20px 10px"}
       >
         <Typography variant="title1" padding={"0px 20px"} marginTop={"10px"}>
           Register Now
