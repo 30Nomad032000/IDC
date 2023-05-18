@@ -35,6 +35,7 @@ export const theme = createTheme({
     },
     subtitle2: { fontWeight: "500", fontSize: "18px", color: "#FFFFFF" },
     subtitle3: { fontWeight: "400", fontSize: "15px", color: "#565656" },
+    subtitle4: { fontWeight: "400", fontSize: "16px", textAlign: "center" },
     title1: { fontWeight: "600", fontSize: "32px", textAlign: "center" },
     title2: {
       fontWeight: "700",

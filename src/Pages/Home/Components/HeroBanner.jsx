@@ -61,7 +61,7 @@ function HeroBanner() {
                   borderRadius: "8px",
                 }}
                 onClick={() => {
-                  navigate("/result");
+                  navigate("/register");
                 }}
               >
                 <Typography variant="subtitle2"> Take the Assesment</Typography>
