@@ -12,7 +12,9 @@ function Survey() {
         className="survey-title-wrapper"
         padding={{ xs: "0px 10px", sm: "0px 45px" }}
       >
-        <Typography variant="title3">Lets get started</Typography>
+        <Typography variant="title3" sx={{ textTransform: "capitalize" }}>
+          Lets get started
+        </Typography>
         <Box className="wrapper-center" gap={"12px"}>
           <Typography variant="title4" color={"#B8B8B8"}>
             <span style={{ color: "#0093D0" }}>{activeStep}</span> / 10
@@ -26,8 +28,8 @@ function Survey() {
           </Box>
         </Box>
       </Box>
-      <Box>
-        <SurveyCard/>
+      <Box className="wrapper-center">
+        <SurveyCard />
       </Box>
     </>
   );
