@@ -10,6 +10,7 @@ function Registeration() {
       justifyContent={"center"}
       alignItems={"center"}
       padding={"20px"}
+      backgroundColor={"##F5F5F5"}
     >
       <Box
         className="register-wrapper"
