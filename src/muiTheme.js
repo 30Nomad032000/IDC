@@ -43,5 +43,7 @@ export const theme = createTheme({
       textAlign: "center",
       textTransform: "capitalize",
     },
+    title3: { fontWeight: "600", fontSize: "16px" },
+    title4: { fontWeight: "700", fontSize: "18px" },
   },
 });
