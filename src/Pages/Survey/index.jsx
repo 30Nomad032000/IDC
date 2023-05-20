@@ -27,8 +27,8 @@ function Survey() {
             <CustomizedProgressBars value={activeStep * 10} />
           </Box>
         </Box>
-      </Box>
-      <Box className="wrapper-center">
+      </Box >
+      <Box className="wrapper-center" padding="50px 20px">
         <SurveyCard />
       </Box>
     </>
