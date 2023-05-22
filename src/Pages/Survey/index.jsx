@@ -17,7 +17,11 @@ function Survey() {
         padding={{ xs: "0px 10px", sm: "0px 45px" }}
       >
         <Typography variant="title3" sx={{ textTransform: "capitalize" }}>
-          {activeStep === 0 ? "Lets get started" : "Continue"}
+          {activeStep === 0
+            ? "Lets get started"
+            : activeStep === 10
+            ? "Done"
+            : "Continue"}
         </Typography>
         <Box className="wrapper-center" gap={"12px"}>
           <Typography variant="title4" color={"#B8B8B8"}>

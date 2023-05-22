@@ -2,6 +2,7 @@ import React from "react";
 import { ErrorBoundary as ReactErrorBoundary } from "react-error-boundary";
 import Link from "@mui/material/Link";
 import PageLoader from "../Common/Loader/pageLoader";
+
 function ErrorFallback(props) {
   return (
     <div
