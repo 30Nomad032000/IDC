@@ -12,8 +12,10 @@ function Footer() {
         <Typography color="#ffffff" align="center" variant="h3">
           Copyright © 2021 IDC and Alteryx. All rights reserved.{" "}
         </Typography>
-        <Typography color="#0093D0" align="center" variant="h3">
-          Privacy Policy &nbsp; Policy Security
+        <Typography color="#0093D0" align="center" variant="h3" sx={{cursor:'pointer',}}>
+          <span className="hover-underline-animation">Privacy Policy</span>{" "}
+          &nbsp;{" "}
+          <span className="hover-underline-animation">Policy Security</span>
         </Typography>
       </Box>
     </footer>

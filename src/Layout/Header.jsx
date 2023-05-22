@@ -7,7 +7,7 @@ import IDC from "../assets/Images/IDC-logo.svg";
 function Header() {
   const navigate = useNavigate();
   return (
-    <AppBar position="sticky" className="Nav">
+    <AppBar position="static" className="Nav">
       <Toolbar
         className="Toolbar"
         sx={{
