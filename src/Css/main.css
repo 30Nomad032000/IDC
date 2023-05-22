@@ -154,3 +154,33 @@
   padding: 0px !important;
   line-height: 19px;
 }
+
+.customButton label,
+.customButton input {
+  padding: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100px;
+  height: fit-content;
+  background: #ffffff;
+  box-shadow: -6px 8px 17px 1px rgba(106, 105, 105, 0.11);
+  border-radius: 6px;
+}
+
+.customButton input[type="radio"] {
+  display: none;
+}
+
+.customButton label:hover {
+  border: 1px solid #0093d0;
+}
+
+.customButton input[type="radio"] :checked {
+  border: 1px solid #009ff9;
+}
+
+.selectedButton {
+  border: 1px solid #0073d0;
+  color: #0073d0;
+}

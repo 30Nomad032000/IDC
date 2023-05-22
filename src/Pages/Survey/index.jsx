@@ -4,7 +4,11 @@ import CustomizedProgressBars from "../../Common/linearProgress";
 import SurveyCard from "./Components/surveyCard";
 
 function Survey() {
-  const [activeStep, setActiveStep] = useState(1);
+  const [activeStep, setActiveStep] = useState(0);
+
+  const setStep = (step) => {
+    setActiveStep(step + 1);
+  };
 
   return (
     <>
@@ -13,7 +17,7 @@ function Survey() {
         padding={{ xs: "0px 10px", sm: "0px 45px" }}
       >
         <Typography variant="title3" sx={{ textTransform: "capitalize" }}>
-          Lets get started
+          {activeStep === 0 ? "Lets get started" : "Continue"}
         </Typography>
         <Box className="wrapper-center" gap={"12px"}>
           <Typography variant="title4" color={"#B8B8B8"}>
@@ -27,9 +31,9 @@ function Survey() {
             <CustomizedProgressBars value={activeStep * 10} />
           </Box>
         </Box>
-      </Box >
+      </Box>
       <Box className="wrapper-center" padding="50px 20px">
-        <SurveyCard />
+        <SurveyCard setStep={setStep} />
       </Box>
     </>
   );
