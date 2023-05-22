@@ -45,5 +45,8 @@ export const theme = createTheme({
     },
     title3: { fontWeight: "600", fontSize: "16px" },
     title4: { fontWeight: "700", fontSize: "18px" },
+    icontext: { fontWeight: "500", fontSize: "25px", color: "#9A9A9A" },
+    icontext1: { fontWeight: "600", fontSize: "42px", color: "#000000" },
+    cardText: { fontWeight: "500", fontSize: "22px", color: "#757575" },
   },
 });

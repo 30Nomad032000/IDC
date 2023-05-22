@@ -178,7 +178,7 @@ export default function SurveyCard(props) {
   };
 
   return (
-    <Box sx={{ width: 1200 }}>
+    <Box sx={{ width: 1400 }}>
       <Stepper
         activeStep={activeStep}
         orientation="vertical"
