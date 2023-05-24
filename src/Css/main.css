@@ -163,6 +163,7 @@
   background: #ffffff;
   box-shadow: -6px 8px 17px 1px rgba(106, 105, 105, 0.11);
   border-radius: 6px;
+  border: 1px solid #d5d5d5;
 }
 
 .customButton input[type="radio"] {
@@ -178,7 +179,7 @@
 }
 
 .selectedButton {
-  border: 1px solid #0073d0;
+  border: 1px solid #0073d0 !important;
   color: #0073d0;
 }
 
