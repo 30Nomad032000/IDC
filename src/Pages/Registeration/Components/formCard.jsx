@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Grid, TextField, Box } from "@mui/material";
+import { Button, Grid, Box } from "@mui/material";
 import CommonSelect from "../../../Common/commonSelect.jsx";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
@@ -49,8 +49,6 @@ function FormCard() {
     register,
     handleSubmit,
     formState: { errors },
-    reset,
-    setValue,
   } = useForm({ resolver: yupResolver(schema) });
 
   return (
@@ -160,7 +158,7 @@ function FormCard() {
               fontWeight: "600",
               textTransform: "capitalize",
             }}
-            onClick={handleSubmit((data) => {
+            onClick={handleSubmit(() => {
               navigate("/survey");
             })}
           >

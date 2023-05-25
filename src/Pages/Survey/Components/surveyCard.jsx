@@ -7,6 +7,7 @@ import StepContent from "@mui/material/StepContent";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import CustomRadioGroup from "./radioGroup";
+import propTypes from "prop-types";
 import { useNavigate } from "react-router-dom";
 
 const steps = [
@@ -149,7 +150,11 @@ const steps = [
   },
 ];
 
-export default function SurveyCard(props) {
+SurveyCard.propTypes = {
+  setStep: propTypes.func,
+};
+
+export default function SurveyCard({ setStep }) {
   const [activeStep, setActiveStep] = useState(0);
   const [options, setOptions] = useState({});
   const [currOption, setCurrOption] = useState("");
@@ -157,7 +162,7 @@ export default function SurveyCard(props) {
 
   const handleNext = () => {
     setActiveStep((prevActiveStep) => prevActiveStep + 1);
-    props.setStep(activeStep);
+    setStep(activeStep);
     let newOptions = { ...options };
     newOptions = { ...newOptions, [activeStep + 1]: currOption };
     setCurrOption("");
@@ -166,7 +171,7 @@ export default function SurveyCard(props) {
 
   const handleReset = () => {
     setActiveStep(0);
-    props.setStep(0);
+    setStep(0);
     setOptions({});
   };
 

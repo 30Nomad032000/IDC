@@ -1,5 +1,5 @@
 import React from "react";
-import { Navigate, Route, Routes, Router } from "react-router-dom";
+import { Navigate, Route, Routes } from "react-router-dom";
 import Header from "../Layout/Header";
 import Footer from "../Layout/Footer";
 import ErrorBoundary from "./errorBoundary";

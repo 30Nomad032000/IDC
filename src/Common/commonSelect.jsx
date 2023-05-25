@@ -1,17 +1,25 @@
 import React from "react";
 import { TextField, MenuItem } from "@mui/material";
+import propTypes from "prop-types";
 
-function CommonSelect(props) {
+CommonSelect.propTypes = {
+  id: propTypes.string,
+  label: propTypes.string,
+  InputProps: propTypes.object,
+  helperText: propTypes.string,
+  data: propTypes.array,
+};
+function CommonSelect({ id, label, InputProps, helperText, data }) {
   return (
     <>
       <TextField
         fullWidth
-        id={props.id}
+        id={id}
         select
-        label={props.label}
+        label={label}
         defaultValue=""
-        InputProps={props.InputProps}
-        helperText={props.helperText}
+        InputProps={InputProps}
+        helperText={helperText}
         sx={{
           "& .MuiFormHelperText-root": {
             color: "red",
@@ -23,7 +31,7 @@ function CommonSelect(props) {
           },
         }}
       >
-        {props.data.map((option) => (
+        {data.map((option) => (
           <MenuItem key={option.value} value={option.value}>
             {option.label}
           </MenuItem>

@@ -1,4 +1,5 @@
-import { AppBar, Box, Typography, Toolbar } from "@mui/material";
+import React from "react";
+import { AppBar, Box, Toolbar } from "@mui/material";
 import "../Css/main.css";
 import Logo from "../assets/Images/Logo.svg";
 import { useNavigate } from "react-router-dom";

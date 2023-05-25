@@ -1,4 +1,4 @@
-import { Box, Grid, Typography } from "@mui/material";
+import { Box, Grid, } from "@mui/material";
 import React from "react";
 import result from "../../assets/Images/result.svg";
 import ThanksCard from "./Components/ThanksCard";

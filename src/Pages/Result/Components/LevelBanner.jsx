@@ -1,3 +1,4 @@
+import React from "react";
 import { Box, Typography, Button } from "@mui/material";
 import { Card } from "../../../Common/Card";
 import Result from "../../../assets/Images/Result-Icon.svg";
@@ -73,9 +74,7 @@ function LevelBanner() {
             display={"flex"}
             justifyContent={"center"}
             paddingTop={"20px"}
-           
             padding={{ xs: "25px 25px", sm: "25px 50px" }}
-
           >
             <Button
               sx={{

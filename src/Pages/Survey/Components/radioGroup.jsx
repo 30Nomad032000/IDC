@@ -1,12 +1,18 @@
 import React, { useState } from "react";
 import { Box, Grid } from "@mui/material";
+import propTypes from "prop-types";
 
-export default function CustomRadioGroup(props) {
+CustomRadioGroup.propTypes = {
+  options: propTypes.array,
+  onSelect: propTypes.func,
+};
+
+export default function CustomRadioGroup({ options, onSelect }) {
   const [radioState, setRadioState] = useState("");
   return (
     <Box className="customButton">
       <Grid container rowSpacing={2} columnSpacing={2}>
-        {props.options.map((item, index) => (
+        {options.map((item, index) => (
           <Grid item xs={12} sm={6} key={index}>
             <label className={radioState === item ? "selectedButton" : ""}>
               <input
@@ -16,7 +22,7 @@ export default function CustomRadioGroup(props) {
                 checked={radioState === item}
                 onChange={(e) => {
                   setRadioState(e.target.value);
-                  props.onSelect(e.target.value);
+                  onSelect(e.target.value);
                 }}
               />
               {item}

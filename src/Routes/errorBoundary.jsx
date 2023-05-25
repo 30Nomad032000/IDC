@@ -2,8 +2,13 @@ import React from "react";
 import { ErrorBoundary as ReactErrorBoundary } from "react-error-boundary";
 import Link from "@mui/material/Link";
 import PageLoader from "../Common/Loader/pageLoader";
+import propTypes from "prop-types";
 
-function ErrorFallback(props) {
+ErrorFallback.propTypes = {
+  resetErrorBoundary: propTypes.func,
+};
+
+function ErrorFallback({ resetErrorBoundary }) {
   return (
     <div
       style={{
@@ -28,10 +33,7 @@ function ErrorFallback(props) {
         }}
       >
         <h2>Something went wrong</h2>
-        <button
-          className="error-boundary-button"
-          onClick={props.resetErrorBoundary}
-        >
+        <button className="error-boundary-button" onClick={resetErrorBoundary}>
           Try again
         </button>
         <Link
@@ -50,10 +52,14 @@ function ErrorFallback(props) {
   );
 }
 
-function ErrorBoundary(props) {
+ErrorBoundary.propTypes = {
+  children: propTypes.children,
+};
+
+function ErrorBoundary({ children }) {
   return (
     <ReactErrorBoundary FallbackComponent={ErrorFallback}>
-      {props.children}
+      {children}
     </ReactErrorBoundary>
   );
 }
